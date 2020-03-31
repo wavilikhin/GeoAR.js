@@ -25,9 +25,10 @@
 
         <a-camera id="target-box" rotation-reader>
 		</a-camera>
-		<a-assets>
-			<img id="my-texture" src="texture.png">
-		</a-assets>
+        <a-assets>
+            <!-- No loop. -->
+            <video id="my-texture" src="vid.mp4" autoplay="true">
+          </a-assets>
 		
 		<a-entity geometry="primitive: plane" position="0 0 0" scale="4 4 4" rotation="-90 0 0" material="src: #my-texture; transparent: true" rotating-camera="target: #target-box"></a-entity>
 		
